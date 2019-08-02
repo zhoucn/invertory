@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-content>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-tab-bar>
+        <ion-tab-button>
+          <ion-button expand="full" fill="clear" size="large" [routerLink]="['/home']" routerLinkActive="active">
+            <ion-icon name="home"></ion-icon>
+          </ion-button>
+        </ion-tab-button>
+        <ion-tab-button>
+          <ion-button expand="full" fill="clear" size="large" [routerLink]="['/data']" routerLinkActive="active">
+            <ion-icon name="trending-up"></ion-icon>
+          </ion-button>
+        </ion-tab-button>
+        <ion-tab-button>
+          <ion-button expand="full" fill="clear" size="large" [routerLink]="['/user']" routerLinkActive="active">
+            <ion-icon name="contact"></ion-icon>
+          </ion-button>
+        </ion-tab-button>
+        <ion-tab-button>
+          <ion-button expand="full" fill="clear" size="large" [routerLink]="['/setting']" routerLinkActive="active">
+            <ion-icon name="settings"></ion-icon>
+          </ion-button>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>
