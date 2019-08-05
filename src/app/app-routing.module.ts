@@ -11,8 +11,9 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   { path: 'data', loadChildren: './data/data.module#DataPageModule' },
-  { path: 'user', loadChildren: './user/user.module#UserPageModule' },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'setting', loadChildren: './setting/setting.module#SettingPageModule' }
+
 
 ];
 

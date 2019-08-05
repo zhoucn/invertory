@@ -12,4 +12,23 @@
       <div class="mail">@Information Mgt Services</div>
     </div>
   </div>
+  <ion-item-group>
+    <ion-item detail (click)="changeProject()">
+      <fa name="star"></fa>
+      <ion-label>Project</ion-label>
+    </ion-item>
+    <ion-item detail>
+      <fa name="globe"></fa>
+      <ion-label>Language</ion-label>
+      <ion-select value="en" [selectedText]="'English'" okText="OK" cancelText="Cancel" (ionChange)="changeLanguage($event)">
+        <ion-select-option value="zh-cn">简体中文</ion-select-option>
+        <ion-select-option value="zh-hk">繁体中文</ion-select-option>
+        <ion-select-option value="en">English</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item detail href="/data">
+      <fa name="cog"></fa>
+      <ion-label>Sign Out</ion-label>
+    </ion-item>
+  </ion-item-group>
 </ion-content>

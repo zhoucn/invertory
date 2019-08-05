@@ -15,28 +15,79 @@ ion-header {
   }
 }
 ion-content {
-  --padding-start: 24px;
-  --padding-end: 24px;
+  --padding-start: 20px;
+  --padding-end: 20px;
   --background: #fbfbfb;
   position: relative;
   &:before {
     content: '';
     position: absolute;
-    top: -28%;
+    top: -22%;
     left: 30%;
     right: 0;
     bottom: 0;
     z-index: 1;
     background: url('../../assets/img/bg.png') no-repeat;
-    background-size: 200%;
+    background-size: 170%;
   }
   .user-detail {
     display: flex;
     align-items: center;
+    padding: 20px;
     img {
       width: 48px;
       height: 48px;
+      margin-right: 15px;
       border-radius: 50%;
     }
+    .name {
+      font-weight: bold;
+      color: #22242A;
+      line-height: 22px;
+    }
+    .mail {
+      line-height: 22px;
+      color: #8D92A3;
+      font-size: 14px;
+    }
+  }
+  ion-item-group {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding-top: 15px;
+    flex: 1 1 auto;
+    ion-item {
+      border: none;
+      --border-color: #f6f6f6;
+      &:first-child {
+        --border-radius: 8px 8px 0 0;
+      }
+      &:last-child {
+        --border-radius: 0 0 8px 8px;
+      }
+      ion-label {
+        line-height: 40px;
+        font-size: 16px;
+        color: #22242a;
+      }
+      fa {
+        font-size: 20px;
+        color: #CDCDD7;
+        margin-right: 15px;
+        &[name='star'] {
+          color: #F7B579;
+        }
+      }
+    }
+  }
+}
+.action-sheet {
+  button {
+    height: 88px;
+  }
+  span {
+    font-size: 14px;
+    color: #22242A;
   }
 }
